@@ -1,3 +1,10 @@
+# INDEX REQUEST
+GET http://localhost:3000/products.json
+
+### SHOW REQUEST
+GET http://localhost:3000/products/11.json
+
+### ADD PRODUCTS
 POST http://localhost:3000/products.json
 Content-Type: application/json
 
@@ -14,7 +21,7 @@ PATCH http://localhost:3000/products/11.json
 Content-Type: application/json
 
 {
-  "price": 169
+  "price": 9
 }
 
 ### PRODUCTS DELETE
