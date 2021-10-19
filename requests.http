@@ -21,7 +21,7 @@ PATCH http://localhost:3000/products/11.json
 Content-Type: application/json
 
 {
-  "price": 9
+  "price": 139
 }
 
 ### PRODUCTS DELETE

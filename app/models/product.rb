@@ -4,7 +4,7 @@ class Product < ApplicationRecord
   end
 
   def tax
-    price * 0.09.ceil(2) 
+    (price * 0.09).ceil(2) 
   end
 
   def total
