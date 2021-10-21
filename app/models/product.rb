@@ -3,6 +3,13 @@ class Product < ApplicationRecord
   validates :price, presence: true, numericality: {greater_than: 0}
   validates :description, length: {in: 10..500}
 
+  belongs_to :supplier
+  has_many :images
+
+  def image
+    Image.where(product_id: id)
+  end
+
   def supplier
     Supplier.where(id: supplier_id)
   end
