@@ -27,3 +27,29 @@ Content-Type: application/json
 ### PRODUCTS DELETE
 DELETE http://localhost:3000/products/10.json
 
+### SUPPLIER REQUESTS ###
+
+# SHOW SUPPLIER INDEX
+GET http://localhost:3000/suppliers.json
+Content-Type: application/json
+
+### CREATE SUPPLIER
+POST http://localhost:3000/suppliers.json
+Content-Type: application/json
+
+{
+  "name": "supplier3",
+  "email": "s3@suppliers.com",
+  "phone_number": "234232324",
+  "supplier_id": "4"
+}
+
+### UPDATE SUPPLIER
+PUT http://localhost:3000/suppliers/1
+Content-Type: application/json
+
+{
+  "name": "supplier1",
+  "email": "supplier1@suppliers.com"
+}
+
