@@ -53,3 +53,15 @@ Content-Type: application/json
   "email": "supplier1@suppliers.com"
 }
 
+
+### Users create (signup)
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Mavi",
+  "email": "mavi@test.com",
+  "password": "food",
+  "password_confirmation": "food"
+}
+

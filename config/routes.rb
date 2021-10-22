@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   get "/suppliers" => "suppliers#index"
   post "/suppliers" => "suppliers#create"
   put "/suppliers/:id" => "suppliers#update"
+
+  ### USER ROUTES
+  post "/users" => "users#create"
+
 end
