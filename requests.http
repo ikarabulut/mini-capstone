@@ -1,8 +1,11 @@
 # INDEX REQUEST
 GET http://localhost:3000/products.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUwMTQyOTN9.ZQZ6V5RsYXrUk_hX2AhWc58WVI2LjPyF0nLQUt0wh4A
 
 ### SHOW REQUEST
 GET http://localhost:3000/products/11.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzUwMTQ0NTF9.l6vjn7yna5kI87mjqXSkp2e2nnL5D2mxeuhYynvC3lM
 
 ### ADD PRODUCTS
 POST http://localhost:3000/products.json
@@ -55,7 +58,7 @@ Content-Type: application/json
 
 
 ### Users create (signup)
-POST http://localhost:3000/users
+POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
@@ -66,10 +69,10 @@ Content-Type: application/json
 }
 
 ### Sessions create (login)
-POST http://localhost:3000/sessions
+POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "test@test.com",
-  "password": "password"
+  "email": "mavi@test.com",
+  "password": "food"
 }
