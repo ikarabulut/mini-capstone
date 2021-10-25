@@ -76,3 +76,25 @@ Content-Type: application/json
   "email": "mavi@test.com",
   "password": "food"
 }
+
+### ORDER CREATE
+POST http://localhost:3000/orders.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzUyNzUxOTl9.PkPd0pmnPfkhem1EkF0Qw4Qr_qPteGwEVXvtKlNcXKc
+Content-Type: application/json
+
+
+{
+  "product_id": 7,
+  "quantity": 1
+}
+
+### ORDER SHOW
+GET http://localhost:3000/orders/5.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzUyNzUxOTl9.PkPd0pmnPfkhem1EkF0Qw4Qr_qPteGwEVXvtKlNcXKc
+Content-Type: application/json
+
+
+### ORDER INDEX
+GET http://localhost:3000/orders.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzUyNzUxOTl9.PkPd0pmnPfkhem1EkF0Qw4Qr_qPteGwEVXvtKlNcXKc
+Content-Type: application/json
