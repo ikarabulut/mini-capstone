@@ -1,11 +1,10 @@
 # INDEX REQUEST
 GET http://localhost:3000/products.json
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzUwMTQyOTN9.ZQZ6V5RsYXrUk_hX2AhWc58WVI2LjPyF0nLQUt0wh4A
+
 
 ### SHOW REQUEST
 GET http://localhost:3000/products/11.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzUwMTQ0NTF9.l6vjn7yna5kI87mjqXSkp2e2nnL5D2mxeuhYynvC3lM
+
 
 ### ADD PRODUCTS
 POST http://localhost:3000/products.json
@@ -79,9 +78,8 @@ Content-Type: application/json
 
 ### ORDER CREATE
 POST http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzUyNzUxOTl9.PkPd0pmnPfkhem1EkF0Qw4Qr_qPteGwEVXvtKlNcXKc
 Content-Type: application/json
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzU1MjAzNDR9.UVmuHE24e4uEI9wXUNSC54P_UL8GMaWPGhSDaJ5UHPw
 
 {
   "product_id": 7,
@@ -90,11 +88,9 @@ Content-Type: application/json
 
 ### ORDER SHOW
 GET http://localhost:3000/orders/5.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzUyNzUxOTl9.PkPd0pmnPfkhem1EkF0Qw4Qr_qPteGwEVXvtKlNcXKc
 Content-Type: application/json
 
 
 ### ORDER INDEX
 GET http://localhost:3000/orders.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzUyNzUxOTl9.PkPd0pmnPfkhem1EkF0Qw4Qr_qPteGwEVXvtKlNcXKc
 Content-Type: application/json
