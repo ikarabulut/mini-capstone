@@ -71,26 +71,46 @@ Content-Type: application/json
 POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
+# {
+#   "email": "test@test.com",
+#   "password": "password"
+# }
+
 {
   "email": "mavi@test.com",
   "password": "food"
 }
-
 ### ORDER CREATE
 POST http://localhost:3000/orders.json
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzU1MjAzNDR9.UVmuHE24e4uEI9wXUNSC54P_UL8GMaWPGhSDaJ5UHPw
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU1Mjk4OTV9.OZPNrEYL7PIrY_l--R3B8q2wIq2XZP5UTqEpXjbefdo
 
-{
-  "product_id": 7,
-  "quantity": 1
-}
 
 ### ORDER SHOW
-GET http://localhost:3000/orders/5.json
+GET http://localhost:3000/orders/10.json
 Content-Type: application/json
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU1Mjk4OTV9.OZPNrEYL7PIrY_l--R3B8q2wIq2XZP5UTqEpXjbefdo
 
 ### ORDER INDEX
 GET http://localhost:3000/orders.json
 Content-Type: application/json
+
+### Carted_Product Create
+POST http://localhost:3000/carted_products.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU1Mjk4OTV9.OZPNrEYL7PIrY_l--R3B8q2wIq2XZP5UTqEpXjbefdo
+
+{
+  "product_id": 7,
+  "quantity": 20
+}
+
+### CartedProduct Index
+GET http://localhost:3000/carted_products.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2MzU1Mjk4OTV9.OZPNrEYL7PIrY_l--R3B8q2wIq2XZP5UTqEpXjbefdo
+
+### Carted Product Remove
+DELETE http://localhost:3000/carted_products/4.json
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2MzU1MzU3MjZ9.SOT-AVSkfu7lKzI3Fj-qPyRD24g8jH3vLHnjqSHX7DE
